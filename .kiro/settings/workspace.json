@@ -1,0 +1,25 @@
+{
+  "projectName": "Renewable Energy vs Netflix Dashboard",
+  "description": "AI-powered sustainability dashboard exploring renewable energy and streaming patterns",
+  "version": "1.0.0",
+  "aiAssisted": true,
+  "developmentTool": "Kiro",
+  "techStack": [
+    "Next.js 14",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Recharts"
+  ],
+  "features": [
+    "Interactive data visualization",
+    "Correlation analysis",
+    "Anomaly detection",
+    "Multi-facility filtering",
+    "Dark/light mode",
+    "Responsive design"
+  ],
+  "developmentTime": "~2 hours with AI assistance",
+  "linesOfCode": "~800"
+}
