@@ -214,7 +214,7 @@ For sustainability initiatives, this approach enables rapid prototyping of data-
 
 ## Repository and Demo
 
-- **GitHub Repository**: [[Your Repository Link Here]](https://github.com/tejasnayak/Kiro-w3)
+- **GitHub Repository**: [(https://github.com/tejasnayak/Kiro-w3)]
 - **Live Demo**: [Your Demo Link Here]https://github.com/tejasnayak/Kiro-w3/blob/main/kiro3-demo.mov
 - **Development Time**: 1.9 hours with AI assistance
 - **Lines of Code**: ~800 (generated with AI optimization)
