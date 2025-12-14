@@ -1,6 +1,6 @@
 # 🚀 GitHub Pages Deployment Guide
 
-## Quick Setup for GitHub Pages
+## Method 1: Automatic Deployment (Recommended)
 
 ### 1. Create GitHub Repository
 ```bash
@@ -27,24 +27,82 @@ git push -u origin main
 4. Under **Source**, select **GitHub Actions**
 5. The workflow will automatically deploy your site
 
-### 3. Update Configuration
-Before pushing, update these files with your GitHub username:
+### 3. If GitHub Actions Fails, Use Manual Method
 
-**next.config.js** - Update the basePath:
+## Method 2: Manual Deployment
+
+### 1. Install gh-pages package
+```bash
+npm install --save-dev gh-pages
+```
+
+### 2. Build and Deploy
+```bash
+# Build the project
+npm run build
+
+# Deploy to gh-pages branch
+npm run deploy
+```
+
+### 3. Enable GitHub Pages (Manual)
+1. Go to repository **Settings** → **Pages**
+2. Source: **Deploy from a branch**
+3. Branch: **gh-pages**
+4. Folder: **/ (root)**
+
+## Method 3: Alternative Static Hosting
+
+If GitHub Pages doesn't work, you can use these alternatives:
+
+### Vercel (Recommended)
+1. Go to [vercel.com](https://vercel.com)
+2. Import your GitHub repository
+3. Deploy automatically
+
+### Netlify
+1. Go to [netlify.com](https://netlify.com)
+2. Drag and drop your `out` folder after running `npm run build`
+
+### Firebase Hosting
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init hosting
+firebase deploy
+```
+
+## Configuration Updates
+
+### Update Repository Name
+Before deploying, update these files with your actual repository name:
+
+**next.config.js**:
 ```javascript
-basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
-assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '',
+basePath: process.env.NODE_ENV === 'production' ? '/your-actual-repo-name' : '',
+assetPrefix: process.env.NODE_ENV === 'production' ? '/your-actual-repo-name/' : '',
 ```
 
 **components/LandingPage.tsx** - Update GitHub links:
 ```javascript
-onClick={() => window.open('https://github.com/yourusername/renewable-netflix-dashboard', '_blank')}
+onClick={() => window.open('https://github.com/yourusername/your-actual-repo-name', '_blank')}
 ```
 
-### 4. Your Live Site
-After deployment, your dashboard will be available at:
+## Your Live Site URLs
+
+### GitHub Pages
 ```
-https://yourusername.github.io/renewable-netflix-dashboard/
+https://yourusername.github.io/your-repo-name/
+```
+
+### Vercel
+```
+https://your-repo-name.vercel.app/
+```
+
+### Netlify
+```
+https://amazing-name-123456.netlify.app/
 ```
 
 ## Features of the Landing Page
