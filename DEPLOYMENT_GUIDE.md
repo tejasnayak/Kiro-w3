@@ -29,11 +29,12 @@ git push -u origin main
 
 ### 3. If GitHub Actions Fails, Use Manual Method
 
-## Method 2: Manual Deployment
+## Method 2: Manual Deployment (Most Reliable)
 
-### 1. Install gh-pages package
+### 1. Install Dependencies
 ```bash
-npm install --save-dev gh-pages
+# Install all dependencies including gh-pages
+npm install
 ```
 
 ### 2. Build and Deploy
