@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/renewable-netflix-dashboard' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/renewable-netflix-dashboard/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Kiro-w3' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Kiro-w3/' : '',
 }
 
 module.exports = nextConfig
